@@ -1,0 +1,8 @@
+.main_wrap .main .m_gnb > li img {
+  background-image: url("../img/new01.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 13vw;
+}

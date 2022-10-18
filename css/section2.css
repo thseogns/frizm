@@ -1,0 +1,117 @@
+/** @format */
+
+.section_2-2 {
+  height: 100%;
+}
+
+.section_2-2 .link_wrap {
+  display: flex;
+  height: 1000px;
+  width: 100%;
+  gap: 20px;
+}
+.section_2-2 .link_wrap .link_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_2-2 .link_wrap .link_left .l_top {
+  background-image: url("../img/img4.jpg");
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.section_2-2 .link_wrap .link_left .l_bottom {
+  display: flex;
+
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+}
+.section_2-2 .link_wrap .link_left .l_bottom .b_left {
+  background-image: url("../img/img2.jpg");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.section_2-2 .link_wrap .link_left .l_bottom .b_right {
+  background-image: url("../img/img7.jpg");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.section_2-2 .link_wrap .link_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_2-2 .link_wrap .link_right .r_top {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  gap: 20px;
+}
+.section_2-2 .link_wrap .link_right .r_top .t_left {
+  background-image: url("../img/img6.jpg");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.section_2-2 .link_wrap .link_right .r_top .t_right {
+  background-image: url("../img/img3.jpg");
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.section_2-2 .link_wrap .link_right .r_bottom {
+  background-image: url("../img/img5.jpg");
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1440px) {
+  .section_2-2 {
+
+height: 700px;
+overflow: scroll;
+  }
+
+ 
+  .section_2-2 .link_wrap {
+    display: block;
+    height: 100%;
+  }
+  .section_2-2 .link_wrap .link_left {
+    width: 100%;
+  }
+  .section_2-2 .link_wrap .link_right {
+    width: 100%;
+  }
+  .l_bottom {
+    margin-bottom: 20px;
+  }
+  .l_top,
+  .b_left,
+  .b_right,
+  .t_left,
+  .t_right,
+  .r_bottom {
+  }
+}
+@media (max-width: 1200px) {
+  .section_2-2 .link_wrap .link_left {
+   
+  }
+  .section_2-2 .link_wrap .link_right {
+    
+}
