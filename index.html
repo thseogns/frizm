@@ -10,47 +10,58 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/section2.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
 
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/berger.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script defer src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
 
   <body>
     <div class="header_wrap">
-      <header>
+      <header class="c_header">
         <a class="logo" href="#"><img src="img/logo.png" alt="로고이미지" /></a>
-        <ul class="gnb">
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Login / join</a></li>
-          <li><a href="#">My Account</a></li>
-          <li>
+        <ul class="gnb float_r overflow">
+          <li class="float_l"><a href="#">Community</a></li>
+          <li class="float_l"><a href="#">Login / join</a></li>
+          <li class="float_l"><a href="#">My Account</a></li>
+          <li class="float_l">
             <a href="#"><input type="text" />Search 검색</a>
           </li>
-          <li>
+          <li class="float_l">
             <a href="#">Cart <span class="ctn">0</span></a>
           </li>
         </ul>
+        <div id="ddd">x 버트</div>
         <div class="berger_wrap">
-          <div class="berger"></div>
+          <div di="b" class="berger"></div>
         </div>
       </header>
     </div>
     <!--title-->
     <div class="title_wrap">
-      <div class="cover">
-        <nav class="img_line">
+      <div class="img_cover">
+        <div class="img_line">
+          <img src="img/02.jpg" alt="" />
           <img src="img/01.jpg" alt="" />
-        </nav>
+        </div>
       </div>
       <div class="word">
         <p>IN<br />DOING<br />WE<br />LEARN</p>
-
-        <div class="btn">
-          <div><span>1 </span>/ 5</div>
-          <button id="wbtn" class="t_btn_left"></button>
-          <button id="wbtn" class="t_btn_right"></button>
-        </div>
       </div>
     </div>
     <!--section1-->
@@ -60,7 +71,9 @@
           <span>New & Now</span>
         </div>
         <div class="gnb_wrap">
-          <div class="gnb_new">
+          <div class="n_gnb_new gnb_new">
+            <a href=""></a>
+            <a href=""></a>
             <a href=""></a>
             <a href=""></a>
             <a href=""></a>
@@ -68,18 +81,18 @@
             <a href=""></a>
             <a href=""></a>
           </div>
-          <button id="s_btn" class="s_btn_left"></button>
-          <button id="s_btn" class="s_btn_right"></button>
         </div>
       </section>
     </div>
-    <div class="section_wrap_1">
+    <div class="section_wrap_1 sec_bar">
       <section class="section1">
-        <div class="text_wrap">
+        <div class="text_wrap2">
           <span>Best</span>
         </div>
         <div class="gnb_wrap">
-          <div class="gnb_new">
+          <div class="b_gnb_new gnb_new">
+            <a href=""></a>
+            <a href=""></a>
             <a href=""></a>
             <a href=""></a>
             <a href=""></a>
@@ -87,26 +100,24 @@
             <a href=""></a>
             <a href=""></a>
           </div>
-          <button id="s_btn" class="s_btn_left"></button>
-          <button id="s_btn" class="s_btn_right"></button>
         </div>
       </section>
     </div>
     <div class="section_2-2">
       <section class="link_wrap">
         <div class="link_left">
-          <div class="l_top"></div>
+          <div class="l_top"><a href="#"></a></div>
           <div class="l_bottom">
-            <div class="b_left"></div>
-            <div class="b_right"></div>
+            <div class="b_left"><a href="#"></a></div>
+            <div class="b_right"><a href="#"></a></div>
           </div>
         </div>
         <div class="link_right">
           <div class="r_top">
-            <div class="t_left"></div>
-            <div class="t_right"></div>
+            <div class="t_left"><a href="#"></a></div>
+            <div class="t_right"><a href="#"></a></div>
           </div>
-          <div class="r_bottom"></div>
+          <div class="r_bottom"><a href="#"></a></div>
         </div>
       </section>
     </div>
@@ -127,16 +138,16 @@
             <ul class="menu">
               <li><a href="#">All</a></li>
               <li><a href="#">Outer </a></li>
-              <li>
-                <a href="#">Top</a>
-                <ul class="menu_sc">
+              <li id="t_button">Top</li>
+              <li id="t_t">
+                <ul class="down_t">
                   <li><a href="">Short</a></li>
                   <li><a href="">Long</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#">Bottom</a>
-                <ul class="menu_sc">
+              <li id="b_button">Bottom</li>
+              <li id="b_b">
+                <ul class="down_b">
                   <li><a href="">Short</a></li>
                   <li><a href="">Long</a></li>
                 </ul>
@@ -150,42 +161,60 @@
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#">Rugby pullover shirt _ pastel yellow</a
+                      ><span>가격 : KRW 44,850 </span>
+                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#">Rugby pullover shirt _ navy</a
+                      ><span>가격 : KRW 44,850</span>
+                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#">Rugby pullover shirt _ black</a
+                      ><span>가격 : KRW 44,850</span>
+                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#"> jacket _ navy</a
+                      ><span>가격 : KRW 170,100</span>
+                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#">varsity jacket _ olive</a
+                      ><span>가격 : KRW 170,100</span>
+                    </li>
                   </ul>
                 </li>
 
                 <li>
                   <img src="" alt="" />
                   <ul>
-                    <li><a href="#">제품명</a><span>가격</span></li>
+                    <li>
+                      <a href="#">varsity jacket _ light gray</a
+                      ><span>가격 : KRW 170,100</span>
+                    </li>
                   </ul>
                 </li>
               </ul>

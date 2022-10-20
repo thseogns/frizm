@@ -1,4 +1,6 @@
-@media (max-width: 1700px) {
+/** @format */
+
+@media (max-width: 1600px) {
   header .gnb li {
   }
 
@@ -6,7 +8,9 @@
   }
   .title_wrap .word {
     font-size: 70px;
-    bottom: 140px;
+  }
+  .section_wrap_1 .gnb_new a {
+    height: 250px;
   }
 }
 @media (max-width: 1440px) {
@@ -16,37 +20,67 @@
   .header_wrap {
     position: fixed;
     padding-top: 1px;
-    background-color: white;
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.7);
+
     width: 100%;
     height: 100px;
   }
   header {
-    margin: 30px 90px;
     margin-bottom: -130px;
-    line-height: 70px;
+    margin: 0;
+  }
+  .logo {
+    position: relative;
+    z-index: 3;
+    line-height: 35px;
+    margin-left: 90px;
+  }
+  .gnb {
+    display: none;
+    width: 100%;
+  }
+  header .gnb li:nth-child(4) {
+    position: absolute;
+    left: calc(50% - 150px);
+  }
+  header .gnb li:first-child {
+    margin-top: 70px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+  }
+  header .gnb li:not(:nth-child(4)) {
   }
   header .gnb li {
-    display: none;
+    margin-top: 20px;
+  }
+
+  header .gnb li a {
+    color: black;
+  }
+
+  header .gnb li input {
+    width: 60%;
+    margin-right: 10px;
   }
   .berger_wrap {
     display: block;
   }
   .title_wrap .word {
-    font-size: 50px;
-    bottom: 120px;
+    font-size: 70px;
   }
   .main_wrap .main .m_gnb > li > ul > li {
     margin-left: 30px;
   }
-
+  .section_wrap_1 .gnb_new a {
+    height: 200px;
+  }
   /*section1버튼의 absolute 때문에 여백이 생김*/
 }
 /* xl */
 @media (max-width: 1200px) {
   .header_wrap {
     padding-top: 1px;
-    background-color: white;
+
     height: 100px;
   }
   .berger_wrap {
@@ -64,6 +98,27 @@
   .title_wrap .word {
     font-size: 0;
   }
+  .main_wrap .main .m_gnb li > ul {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .main_wrap .main .m_gnb li > ul a {
+  }
+  /* slick */
+  .img_cover .slick-next,
+  .img_cover .slick-prev {
+    border-style: initial;
+  }
+  .img_cover .slick-prev {
+    bottom: 50%;
+    left: 0;
+    z-index: 3;
+  }
+  .img_cover .slick-next {
+    bottom: 48%;
+    right: 0;
+  }
 }
 
 /* lg */
@@ -76,25 +131,19 @@
   }
   .header_wrap {
     padding-top: 1px;
-    background-color: white;
-    opacity: 0.7;
+
     height: 100px;
   }
   header {
-    margin: 30px 90px;
+    margin: 0;
     margin-bottom: -130px;
-    line-height: 70px;
   }
-  #s_btn {
-    width: 40px;
-    height: 40px;
-    border-color: rgb(151, 151, 151);
+  .gnb {
+    width: 100%;
+    height: 100%;
   }
-  .s_btn_right {
-    right: 40px;
-  }
-  .s_btn_left {
-    left: 40px;
+  header .gnb li a {
+    font-size: 10px;
   }
   .main_wrap .main .m_gnb {
   }
@@ -128,6 +177,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
   }
   .menu_wrap .menu > li {
     width: 100%;
@@ -191,23 +241,30 @@
   .menu_wrap {
     min-width: 448px;
   }
+  header .gnb li input {
+    width: 50%;
+    margin-left: -15px;
+  }
+
+  /*top bottom 토글 */
 }
 /* md */
 @media (max-width: 768px) {
+  .section_wrap_1 {
+    height: 550px;
+  }
   .berger_wrap {
     display: block;
   }
   .header_wrap {
     padding-top: 1px;
-    background-color: white;
-    opacity: 0.7;
+
     width: 100%;
     height: 100px;
   }
   header {
-    margin: 20px 40px;
+    margin: 0;
     margin-bottom: -130px;
-    line-height: 70px;
   }
   header > a {
     margin-top: -7px;
